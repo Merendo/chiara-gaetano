@@ -126,6 +126,10 @@ header img {
   text-transform: uppercase;
 }
 
+.dropdown_menu a:hover {
+  color: #f5bcb7;
+}
+
 .first {
   border-top-style: solid;
   border-top-width: 1px;
@@ -139,6 +143,10 @@ header img {
 
 .last a {
   color: #ffffff;
+}
+
+.last a:hover {
+  color: #f5bcb7;
 }
 
 /*? div icona hamburger*/
