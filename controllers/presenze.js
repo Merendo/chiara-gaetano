@@ -11,7 +11,8 @@ export const inserisciPresenza = async (req, res) => {
     !user.Telefono ||
     !user.Intolleranze ||
     !user.Navetta ||
-    !user.Accompagnatore
+    !user.Accompagnatore ||
+    !user.Serata
   )
     return res
       .status(400)

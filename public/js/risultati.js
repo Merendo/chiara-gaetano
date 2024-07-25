@@ -45,6 +45,7 @@ async function load() {
     NomeA: ${user.NomeA}<br>
     CognomeA: ${user.CognomeA}<br>
     Navetta: ${user.Navetta}<br>
+    Serata 6/09: ${user.Serata}<br>
     Extra: ${user.Extra}</li>`;
     console.log(markup);
     document.querySelector("ul").insertAdjacentHTML("beforeend", markup);

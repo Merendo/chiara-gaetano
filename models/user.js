@@ -64,6 +64,10 @@ const userSchema = mongoose.Schema(
       type: String,
       require: true,
     },
+    Serata: {
+      type: String,
+      require: true,
+    },
     Extra: {
       type: String,
       length: 250,
