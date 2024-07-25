@@ -4,7 +4,6 @@ const form = document.getElementById("dati");
 form.addEventListener("submit", handleFormSubmit);
 
 async function handleFormSubmit(e) {
-  e.preventDefault();
   const form = e.currentTarget;
 
   const URL = form.action;
