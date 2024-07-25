@@ -20,7 +20,7 @@ router.get("/ListaNozze", (req, res) => {
 });
 
 router.get("/InfoForUs", (req, res) => {
-  res.render("InfoForUs", req.query);
+  res.render("InfoForUS", req.query);
 });
 
 router.get("/Risultati", authenticateToken, (req, res) => {
