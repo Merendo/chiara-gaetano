@@ -93,7 +93,7 @@ header img {
 }
 
 .dropdown_menu {
-  display: none; /*! DA TOGLIEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE AGGIUGNI OPACiTY*/
+  opacity: 0;
   position: absolute;
   top: 76px;
   width: 100%;
@@ -102,7 +102,7 @@ header img {
 }
 
 .dropdown_menu.active {
-  display: block;
+  opacity: 1;
 }
 
 .dropdown_menu li {
