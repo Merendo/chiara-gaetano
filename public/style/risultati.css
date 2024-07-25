@@ -1,0 +1,45 @@
+.content {
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 80px;
+}
+body {
+  background-color: #f8cfcb;
+  font-family: "Garamond", sans-serif;
+}
+b {
+  color: #cc9b8e;
+}
+
+/*? aggiustamento dati ul*/
+.content ul {
+  padding: 10px;
+}
+
+.content li {
+  list-style-type: none;
+  text-align: left;
+  background-color: #ffffff80;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 481px) {
+  /*? aggiustamento dati ul*/
+
+  .content li {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /*? aggiustamento dati ul*/
+
+  .content li {
+    font-size: 30px;
+  }
+}

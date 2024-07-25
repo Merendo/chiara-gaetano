@@ -1,0 +1,41 @@
+<% let pagina= 'listanozze'%>
+  <%- include('includes/head.ejs', {pagina}); %>
+
+  <body>
+    <!--? Go Top -->
+    <div id="progress">
+      <i id="progressValue" class="fas fa-chevron-up"></i>
+    </div>
+
+    <%- include('includes/header.ejs'); %>
+
+    <article class="content">
+      <div class="cit-contenitore">
+        <div class="quote-left">
+          <i class="fa-solid fa-heart fa-3x" style="display: flex"></i>
+        </div>
+        <div class="quote-right">
+          <i class="fa-solid fa-heart fa-3x" style="display: flex"></i>
+        </div>
+        <div class="cit">
+          <p>
+            Gli oggetti si perdono, si rompono, si dimenticano.<br>
+            Un viaggio è un'emozione che resta impressa per sempre nella nostra memoria. <br>
+            Se vuoi contribuire a regalarci un ricordo indimenticabile, aiutaci a realizzare un sogno: Il nostro <b style="color: #cc9b8e;"> Viaggio di Nozze! </b> <br>
+            Partecipa alla nostra lista 
+            <a href="https://goccediviaggio.it/lista/chiaraegaetano">cliccando qui.</a> <br>
+            il nome utente e la password sono: lista-287/chiaraegaetano
+            <br>
+            Grazie di cuore
+          </p>
+          <h5>Gaetano e Chiara</h5>
+        </div>
+      </div>
+    </article>
+    <!-- FOOTER -->
+    <%- include('includes/footer.ejs') %>
+
+    <%- include('includes/script.ejs') %>
+    
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<% let pagina= 'index'%>
+  <%- include('includes/head.ejs', {pagina}); %>
+  
+  <body>
+    <!--? Go Top -->
+    <div id="progress">
+      <i id="progressValue" class="fas fa-chevron-up"></i>
+    </div>
+
+    <%- include('includes/header.ejs'); %>
+
+    <article class="content">
+      <div class="principal-Content">
+        <div class="h6-married">
+          <h6>We are getting married</h6>
+        </div>
+        <div class="principal-title">
+          <h1>Chiara Gaetano</h1>
+        </div>
+        <div class="foreshadow-title">
+          <h2>&</h2>
+        </div>
+
+        <div class="date-title">
+          <h3>07 09 2024</h3>
+        </div>
+
+        <div class="calendar-btn">
+          <a class="calendar-link" href="https://calndr.link/e/11qKv6Wtxq?s=google">
+            <span class="calendar-items">
+              <span class="far fa-calendar" ></span>
+              <span class="item-button-text">add to calendar</span> 
+            </span>
+          </a>
+        </div>
+        <div class="countdown-container">
+          <ul class="countdown-list">
+            <li class="countdown-li-days">
+              <div class="countdown-items">
+                <span class="countdown-digit" id="days">00</span>
+                <span class="countdown-label">Giorni</span>
+              </div>
+            </li>
+            <li class="countdown-li-hours">
+              <div class="countdown-items">
+                <span class="countdown-digit" id="hours">00</span>
+                <span class="countdown-label">Ore</span>
+              </div>
+            </li>
+            <li class="countdown-li-minutes" >
+              <div class="countdown-items">
+                <span class="countdown-digit" id="minutes">00</span>
+                <span class="countdown-label">Minuti</span>
+              </div>
+            </li>
+            <li class="countdown-li-seconds">
+              <div class="countdown-items">
+              <span class="countdown-digit" id="seconds">00</span>
+              <span class="countdown-label">Secondi</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="indication-content"> <!--? contenitore delle indicazioni-->
+        <div class="Ceremony-content"> <!--? contenitore della cerimonia-->
+          <h2>Cerimonia</h2>
+          <div class="indication-cerimony">
+            <p>Chiesa del Sacro Cuore di Gesù</p>
+            <p>Sabato, 7 Settembre 2024</p>
+            <p>Ore 14:30</p>
+            <p>Via Scavini 18, Novara(NO)</p>
+          </div>
+          <div class="ceremony-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.4853200278353!2d8.61041197752704!3d45.43987547107365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a1b9905d203%3A0x34594e0af7ea4a72!2sParrocchia%20Sacro%20Cuore%20di%20Ges%C3%B9!5e0!3m2!1sit!2sit!4v1715266693906!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="reception-content">
+          <h2>Ricevimento</h2>
+          <div class="indication-reception">
+            <p>Regina Palace Hotel</p>
+            <p>Sabato, 7 Settembre 2024</p>
+            <p>Ore 17:45</p></p>
+            <p>Corso Umberto I 29, Stresa (VB)</p>
+          </div>
+          <div class="reception-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11109.28662101977!2d8.52836646977539!3d45.88487960000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47867588b2ef6003%3A0xd4c45a1f258f59da!2sRegina%20Palace%20Hotel!5e0!3m2!1sit!2sit!4v1715270800390!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="last-content">
+        <p>Scopri di più sul matrimonio<a href="AboutUs"> qui.</a></p>
+      </div>
+    </article>
+    <!-- FOOTER -->
+    <%- include('includes/footer.ejs') %>
+    
+    <script type="module" src="js/index.js" ></script> 
+    
+    <%- include('includes/script.ejs') %>
+  </body>

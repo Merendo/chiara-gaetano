@@ -1,0 +1,726 @@
+@font-face {
+  font-family: "Dancing", sans-serif;
+  src: url(fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  z-index: 0;
+  height: 100vh;
+}
+
+/*! Enabled SMOOTH SCROLLING in chrome://flags//*/
+/*! Attiva lo smooth scrolling dalle impostazioni di firefox, impostazioni sezione browser*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+#progress {
+  background-color: #cc9b8e;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  display: none;
+  place-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#progressValue {
+  display: block;
+  height: auto;
+  width: auto;
+  background-color: #cc9b8e;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 76px;
+  z-index: 2;
+}
+
+header img {
+  background-color: transparent;
+}
+
+/*? div del logo*/
+
+.left_header {
+  height: 75px;
+  width: 166.55px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.right_header {
+  height: 75px;
+  width: 133.45px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbar {
+  background-color: #ffffff;
+  position: fixed;
+  width: inherit;
+  height: 76px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #f5bcb7;
+}
+
+.dropdown_menu {
+  display: none; /*! DA TOGLIEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE AGGIUGNI OPACiTY*/
+  position: absolute;
+  top: 76px;
+  width: 100%;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.dropdown_menu.active {
+  display: block;
+}
+
+.dropdown_menu li {
+  width: 100%;
+  height: 44.7833px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  list-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #dedede;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Garamond, Helvetica, Arial, sans-serif;
+}
+
+.dropdown_menu a {
+  text-decoration: none;
+  color: #cc9b8e;
+  text-transform: uppercase;
+}
+
+.first {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: #dedede;
+}
+
+.dropdown_menu .last {
+  background-color: #cc9b8e;
+  border-bottom: none;
+}
+
+.last a {
+  color: #ffffff;
+}
+
+/*? div icona hamburger*/
+
+.toggle_btn {
+  width: 41.9px;
+  height: 41.9px;
+  border-radius: 50%;
+  background-color: #cc9b8e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fa-solid {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-bars {
+  display: flex;
+  color: #ffffff;
+}
+
+.fa-xmark {
+  color: #ffffff;
+}
+
+/*? inzio contenuto principale home*/
+
+.content {
+  position: relative;
+  background-color: #f8cfcb;
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 75px;
+}
+
+.principal-Content {
+  position: relative;
+  justify-content: center;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  height: 578.5px;
+}
+
+/*? div contenente h6 getting married*/
+
+.h6-married {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.h6-married h6 {
+  height: 40px;
+  width: 280px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Garamond";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.25rem;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/*? titolo principale Chiara/gaetano/&*/
+
+/*? div per chiara gaetano*/
+.principal-title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal-title h1 {
+  position: relative;
+  text-align: center;
+  font-size: 55px;
+  line-height: 2em;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-family: "Bentham", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  word-spacing: 35px;
+}
+
+/*?div per &*/
+.foreshadow-title {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.foreshadow-title h2 {
+  color: #ffffff8c;
+  width: 100%;
+  height: 100%;
+  font-family: "Parisienne", sans-serif;
+  font-size: 190px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+/*?data di matrimonio*/
+
+/*? div della data*/
+.date-title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-title h3 {
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+  margin-bottom: 35px;
+  font-size: 45px;
+  font-family: "garamond", sans-serif;
+  letter-spacing: 7px;
+}
+
+/*? calendar button*/
+
+/*? div for button*/
+
+.calendar-btn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-btn a {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: "Garamond", sans-serif;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  width: auto;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 1em;
+}
+
+/*? icona e scritta nello span*/
+.calendar-itmes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/*? cuntdown*/
+
+/*? countdown div*/
+
+.countdown-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/*? ul*/
+.countdown-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.countdown-list li {
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.countdown-list span {
+  display: block;
+}
+
+.countdown-items {
+  position: relative;
+  display: block;
+  width: inherit;
+  text-align: center;
+  width: 100%;
+}
+
+.countdown-digit {
+  font-family: "Garamond", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.dancing-script-dancing {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.countdown-label {
+  color: #ffffff;
+  font-family: "Dancing Script", cursive;
+  font-size: 17px;
+  font-weight: 700px;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+/*? contenitore sezione indicazioni*/
+.indication-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.indication-content h2 {
+  text-transform: uppercase;
+  font-family: "Garamond", sans-serif;
+  font-weight: 700;
+  line-height: 1.3rem;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.indication-content p {
+  margin-bottom: 1em;
+  font-family: "Garamond", sans-serif;
+  font-style: inherit;
+  line-height: 1em;
+}
+
+/*?div indicazioni cerimonia*/
+
+.Ceremony-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #ffffff80;
+  backdrop-filter: blur(1px);
+}
+
+/*? div della mappa*/
+
+.ceremony-map {
+  padding: 25px;
+}
+
+/*? div indicazioni reception*/
+
+.reception-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #ffffff80;
+  backdrop-filter: blur(1px);
+}
+
+.reception-map {
+  padding: 25px;
+}
+
+/*?ultimo pezzo*/
+
+/*? ultima div*/
+
+.last-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.last-content p {
+  font-family: "Garamond", sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.last-content a {
+  text-decoration: none;
+  color: #bc7b6a;
+}
+
+/*? footer*/
+footer {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: #f5bcb7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  font-size: 10px;
+}
+
+footer i {
+  width: 15px;
+  height: 10px;
+  display: inline;
+}
+
+@media screen and (min-width: 481px) {
+  /*? div del logo*/
+
+  .dropdown_menu li {
+    height: 55px;
+    font-size: 20px;
+  }
+
+  /*? div contenente h6 getting married*/
+
+  .h6-married {
+    height: 75px;
+  }
+
+  .h6-married h6 {
+    height: 55px;
+    line-height: 1.45rem;
+    font-size: 25px;
+  }
+
+  /*? titolo principale Chiara/gaetano/&*/
+
+  /*?div per &*/
+  .foreshadow-title {
+    top: 40px;
+    left: 5px;
+  }
+
+  /*?data di matrimonio*/
+
+  /*? div della data*/
+
+  .date-title h3 {
+    font-size: 55px;
+  }
+
+  /*? calendar button*/
+
+  /*? div for button*/
+
+  .calendar-btn a {
+    font-size: 17px;
+  }
+
+  /*? cuntdown*/
+
+  /*? countdown div*/
+
+  .countdown-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  /*? ul*/
+
+  .countdown-digit {
+    font-size: 40px;
+  }
+
+  .countdown-label {
+    font-size: 27px;
+  }
+
+  /*? contenitore sezione indicazioni*/
+
+  .indication-content h2 {
+    text-transform: uppercase;
+    font-family: "Garamond", sans-serif;
+    font-weight: 700;
+    line-height: 1.3rem;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .indication-content p {
+    line-height: 1.5em;
+    font-size: 25px;
+  }
+
+  /*? div indicazioni reception*/
+
+  /*?ultimo pezzo*/
+
+  /*? ultima div*/
+
+  .last-content p {
+    font-size: 27px;
+  }
+
+  .last-content a {
+    text-decoration: none;
+    color: #bc7b6a;
+  }
+
+  /*? footer*/
+
+  footer span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /*? div contenente h6 getting married*/
+
+  .h6-married {
+    height: 90px;
+  }
+
+  .h6-married h6 {
+    height: 60px;
+    line-height: 1.7rem;
+    font-size: 27px;
+  }
+
+  /*? titolo principale Chiara/gaetano/&*/
+
+  .principal-title h1 {
+    font-size: 75px;
+    word-spacing: 50px;
+  }
+  /*?div per &*/
+  .foreshadow-title {
+    top: 50px;
+    right: 40px;
+  }
+
+  /*?data di matrimonio*/
+
+  /*? div della data*/
+
+  .date-title h3 {
+    font-size: 70px;
+  }
+
+  /*? calendar button*/
+
+  /*? div for button*/
+
+  .calendar-btn a {
+    font-size: 22px;
+  }
+
+  /*? cuntdown*/
+
+  /*? ul*/
+
+  .countdown-digit {
+    font-size: 55px;
+  }
+
+  .countdown-label {
+    font-size: 35px;
+  }
+
+  /*? contenitore sezione indicazioni*/
+  .indication-content {
+    flex-direction: row;
+    margin-top: 70px;
+  }
+
+  .indication-content h2 {
+    font-size: 30px;
+  }
+
+  .indication-content p {
+    line-height: 1.5em;
+    font-size: 30px;
+  }
+
+  /*? div indicazioni Ceremony*/
+
+  .Ceremony-content {
+    margin-right: 7.5px;
+  }
+  /*? div indicazioni reception*/
+  .reception-content {
+    margin-left: 7.5px;
+  }
+  /*?ultimo pezzo*/
+
+  /*? ultima div*/
+  .last-content {
+    margin-top: 20px;
+  }
+
+  .last-content p {
+    font-size: 30px;
+  }
+
+  .last-content a {
+    text-decoration: none;
+    color: #bc7b6a;
+  }
+
+  /*? footer*/
+
+  footer span {
+    font-size: 20px;
+  }
+}

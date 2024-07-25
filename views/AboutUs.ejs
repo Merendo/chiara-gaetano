@@ -1,0 +1,123 @@
+<% let pagina= 'aboutus'%>
+  <%- include('includes/head.ejs', {pagina}); %>
+
+  <body>
+    <!--? Go Top -->
+    <div id="progress">
+      <i id="progressValue" class="fas fa-chevron-up"></i>
+    </div>
+
+    <%- include('includes/header.ejs'); %>
+
+    <article class="content">
+      <div class="content-title">
+        <h3>About us</h3>
+      </div>
+
+      <div class="journey">
+        <!--? engagement-->
+        <div class="journey-div-tp">
+          <div class="circle"></div>
+          <h3>20 01 2008</h3>
+          <div class="journey-content-tp">
+            <h4>Engagement</h4>
+            <p>
+              Ci conosciamo da quando siamo piccoli. Abbiamo iniziato a vederci
+              nell'agosto del 2007, per poi fidanzarci a Gennaio del 2008. Come
+              inaugurare al meglio il nuovo anno?
+            </p>
+          </div>
+        </div>
+
+        <!--? first child-->
+        <div class="journey-div-tp">
+          <div class="circle"></div>
+          <h3>22 07 2016</h3>
+          <div class="journey-content-tp">
+            <h4>Frist child</h4>
+            <p>
+              Con sorpresa e un po' di paura è arrivato il piccolo Thomas.
+              Tuttavia quella paura si è trasformata fin da subito in amore, un
+              amore che ha legato la nostra famiglia ancora di più
+            </p>
+          </div>
+        </div>
+
+        <!--? second child-->
+        <div class="journey-div-tp">
+          <div class="circle"></div>
+          <h3>6 03 2018</h3>
+          <div class="journey-content-tp">
+            <h4>Second Child</h4>
+            <p>
+              Un amore così grande che ci ha portati a Nicholas. Arrivato in
+              modo turbinoso come il suo carattere, ma finiti i problemi non
+              hanno fatto che aumentare i sorrisi
+            </p>
+          </div>
+        </div>
+
+        <!--?yes day-->
+        <div class="journey-div-tp">
+          <div class="circle"></div>
+          <h3>23 07 2022</h3>
+          <div class="journey-content-tp">
+            <h4>Yes day</h4>
+            <p>
+              Durante il compleanno di Chiara, tra lacrime per gli auguri e
+              fiori, due piccoli bimbi iniziano a correre verso di lei con delle
+              rose, infine Gaetano si inginocchia e le mostra l'anello. È un sì!
+            </p>
+          </div>
+        </div>
+
+        <!--?big day-->
+        <div class="journey-div-tp">
+          <div class="circle"></div>
+          <h3>07 09 2024</h3>
+          <div class="journey-content-tp">
+            <h4>Big day</h4>
+            <p>
+              Arriva il grande giorno, e non vediamo l'ora di trascorrerlo e
+              festeggiarlo insieme a tutti i nostri affetti più cari. Vi
+              aspettiamo tutti!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="card"><img src="/img/immaginiTemporanee/img1.jpg" /></div>
+        <div class="card"><img src="img/immaginiTemporanee/img2.jpg" /></div>
+        <div class="card"><img src="img/immaginiTemporanee/img3.jpg" /></div>
+        <div class="card"><img src="img/immaginiTemporanee/img4.jpg" /></div>
+        <div class="card"><img src="img/immaginiTemporanee/img5.jpg" /></div>
+        <div class="card"><img src="img/immaginiTemporanee/img6.jpg" /></div>
+        <div class="card"><img src="img/immaginiTemporanee/img7.jpg" /></div>
+      </div>
+
+      <div class="last-div">
+        <p>
+          Sei curioso di vedere chi ci aiuterà al matrimonio? Allora
+          <a href="TheWedding">Clicca qui!</a>
+        </p>
+      </div>
+    </article>
+    <%- include('includes/footer.ejs') %>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <%- include('includes/script.ejs') %>
+    <script type="module" src="/js/Carousel.js"></script>
+  </body>
+</html>

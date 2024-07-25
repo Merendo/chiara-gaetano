@@ -1,0 +1,188 @@
+<% let pagina= 'infoforus'%>
+
+<%- include('includes/head.ejs', {pagina}); %>
+
+  <body>
+    <!--? Go Top -->
+    <div id="progress">
+      <i id="progressValue" class="fas fa-chevron-up"></i>
+    </div>
+
+    <%- include('includes/header.ejs'); %>
+
+    <article class="content">
+      <div class="content-title">
+        <h3>Info per noi</h3>
+      </div>
+      <p>
+        Per aiutarci con l'organizzazione, vi chiediamo pochi minuti del vostro
+        tempo per compilare i <i>form</i> di seguito. Saranno
+        <b>pochi minuti</b> che ci daranno un aiuto immenso.<br />
+        <b>Vi ringraziamo in anticipo!</b>
+      </p>
+
+      <form action="/InfoForUs" id="dati" novalidate>
+        <fieldset class="radio-input-tp">
+          <legend class="title-tp">Sarai dei nostri?*</legend>
+          <div>
+            <input name="Presenza" type="radio" value="Ci sono" required /><label>Sì, ci sarò</label>
+          </div>
+    
+          <div>
+            <input name="Presenza" type="radio" value="Non ci sono" required /><label>No, mi dispiace</label>
+          </div>
+    
+          <label class="invalid-label hidden">Questo campo è obbligatorio</label>
+        </fieldset>
+
+        <div class="db-input-tp">
+          <div class="item">
+            <label class="title-tp">Nome*</label>
+            <input
+              name="Nome"
+              type="text"
+              class="form-control"
+              placeholder="Nome"
+              required
+            />
+          </div>
+          <div class="item">
+            <label class="title-tp">Cognome*</label>
+            <input
+              name="Cognome"
+              type="text"
+              class="form-control"
+              placeholder="Cognome"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="input-tp">
+          <label class="title-tp">Numero telefono*</label>
+          <input
+            name="Telefono"
+            type="tel"
+            class="form-control"
+            placeholder="Es: 333 333 3333"
+            required
+          />
+        </div>
+        <div class="input-tp">
+          <label class="title-tp">Email</label>
+          <input
+            name="Email"
+            type="email"
+            class="form-control"
+            placeholder="Email@example.com"
+            required
+          />
+        </div>
+
+        <div class="input-tp">
+          <label class="title-tp">Da quante persone è composta la tua famiglia?</label>
+          <input
+            name="NumeroFamiglia"
+            type="number"
+            class="form-control"
+          />
+        </div>
+
+        <fieldset class="radio-input-tp">
+          <legend class="title-tp">Hai intolleranze alimentari o allergie?*</legend>
+          <div>
+            <input name="Intolleranze" type="radio" value="Sì" required /><label>Sì</label>
+          </div>
+          <div>
+            <input name="Intolleranze" type="radio" value="Non ho nulla" required /><label>No</label>
+          </div>
+    
+          <label class="invalid-label2 hidden">Questo campo è obbligatorio</label>
+        </fieldset>
+
+        <div class="input-tp">
+          <label class="title-tp">Se sì, che allergie/intolleranze hai?</label>
+          <input
+            name="IntolleranzeScritte"
+            type="text"
+            class="form-control"
+            placeholder="Es: Pesca, celiachia, ecc."
+          />
+        </div>
+
+        <fieldset class="radio-input-tp">
+          <legend class="title-tp">Segui un regime alimentare particolare?</legend>
+          <div>
+            <input name="Regime" type="radio" value="Sono vegetariano" /><label>Vegetariano</label>
+          </div>
+          <div>
+            <input name="Regime" type="radio" value="Sono vegano" /><label>Vegano</label>
+          </div>
+        </fieldset>
+
+        <div class="input-tp">
+          <label class="title-tp">Hai altre esigenze alimentari?</label>
+          <input
+            name="Esigenze"
+            type="text"
+            class="form-control"
+            placeholder="Es: non mangio pesce"
+          />
+        </div>
+
+        <fieldset class="radio-input-tp">
+          <legend class="title-tp">Usufruirai del servizio navetta dalla chiesa alla location*</legend>
+          <div>
+            <input name="Navetta" type="radio" value="Sì" required /><label>Sì</label>
+          </div>
+          <div>
+            <input name="Navetta" type="radio" value="No" required /><label>No</label>
+          </div>
+    
+          <label class="invalid-label3 hidden">Questo campo è obbligatorio</label>
+        </fieldset>
+
+        <fieldset class="radio-input-tp">
+          <legend class="title-tp">porterai un accompagnatore?*</legend>
+          <div>
+            <input name="Accompagnatore" type="radio" value="Sì" required/><label>Sì</label>
+          </div>
+          <div>
+            <input name="Accompagnatore" type="radio" value="No" required/><label>No</label>
+          </div>
+    
+          <label class="invalid-label4 hidden">Questo campo è obbligatorio</label>
+        </fieldset>
+
+        <div class="accompagnatore-div" >
+          <label class="title-tp">Dati accompagnatore</label>
+          <div class="accompagnatore-input">
+            <div class="item">
+              <input name="NomeA" type="text" class="form-control" placeholder="Nome" />
+            </div>
+            <div class="item">
+              <input name="CognomeA" type="text" class="form-control" placeholder="Cognome" />
+            </div>
+          </div>
+        </div>
+
+        <div class="input-tp">
+          <label class="title-tp">Vuoi dirci altro?</label>
+          <textarea name="Extra" class="form-control" rows="3"></textarea>
+        </div>
+
+        <button id="submit" type="submit" >
+          <p>INVIA</p>
+        </button>
+      </form>
+    </article>
+  
+    <!-- FOOTER -->
+    <%- include('includes/footer.ejs') %>
+    
+    <%- include('includes/script.ejs') %>
+
+    <script type="module" src="js/infoforus.js"></script>
+    <script type="module" src="js/sendata.js"></script>
+  </body>
+</html>

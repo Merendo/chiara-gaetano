@@ -1,0 +1,150 @@
+<% let pagina= 'thewedding'%> <%- include('includes/head.ejs', {pagina}); %>
+
+  <body>
+    <!--? Go Top -->
+    <div id="progress">
+      <i id="progressValue" class="fas fa-chevron-up"></i>
+    </div>
+
+    <%- include('includes/header.ejs'); %>
+
+    <article class="content">
+      <div class="content-title">
+        <h3>The Wedding</h3>
+      </div>
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/OFpNfK1gRGw?autoplay=1&mute=1&loop=1&rel=0&playlist=OFpNfK1gRGw"
+          title="The Hotel"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <h2>Programma</h2>
+
+      <div class="card-container">
+        <div class="card-tp">
+          <!--? contenitore delle indicazioni-->
+          <div class="card-data-tp">
+            <!--? contenitore della cerimonia-->
+            <img src="/img/apericena.png" />
+            <h2>06 09</h2>
+            <p><b>APERICENA</b></p>
+            <p>Ore 18:30</p>
+            <p>
+              CEG Point<br />
+              Via Ludovico Sforza 107/A, 28100, Pernate
+            </p>
+          </div>
+        </div>
+
+        <div class="card-tp">
+          <!--? contenitore delle indicazioni-->
+          <div class="card-data-tp">
+            <!--? contenitore della cerimonia-->
+            <img src="/img/CerimoniaFoto.png" />
+            <h2>07 09</h2>
+            <p><b>CERIMONIA</b></p>
+            <p>Ore 14:30</p>
+            <p>
+              Chiesa del Sacro Cuore di Gesù<br />
+              Via Scavini 18, 28100 , Novara 
+            </p>
+          </div>
+        </div>
+
+        <div class="card-tp">
+          <!--? contenitore delle indicazioni-->
+          <div class="card-data-tp">
+            <!--? contenitore della cerimonia-->
+            <img src="/img/cake.png" />
+            <h2>07 09</h2>
+            <p><b>RICEVIMENTO</b></p>
+            <p>Ore 17:45</p>
+            <p>
+              Regina Palace Hotel<br />
+              Corso Umberto I 29, Stresa
+            </p>
+          </div>
+        </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="card"><img src="img/ReginaPalace/ReginaPalace1.jpg" /></div>
+        <div class="card"><img src="img/ReginaPalace/ReginaPalace2.jpg" /></div>
+        <div class="card"><img src="img/ReginaPalace/ReginaPalace3.jpg" /></div>
+        <div class="card"><img src="img/ReginaPalace/ReginaPalace4.jpg" /></div>
+        <div class="card"><img src="img/ReginaPalace/ReginaPalace5.jpg" /></div>
+        <div class="card"><img src="img/ReginaPalace/ReginaPalace6.jpg" /></div>
+      </div>
+
+      <div class="cit-contenitore">
+        <div class="quote-left">
+          <i class="fa-solid fa-quote-left fa-5x" style="display: flex"></i>
+        </div>
+        <div class="quote-right">
+          <i class="fa-solid fa-quote-right fa-5x" style="display: flex"></i>
+        </div>
+        <div class="cit">
+          <p>
+            Di qualunque cosa siano fatte le nostre anime, la mia e la tua sono
+            fatte della stessa cosa
+          </p>
+          <h5>Emily brontë</h5>
+        </div>
+      </div>
+
+      <div class="testimoni">
+        <h2>Le nostre Testimoni</h2>
+        <div class="foto">
+          <div class="img-div"><img src="/img/Testimoni/irene.jpg" /></div>
+          <p><b>Migliore amica della sposa</b></p>
+          <h5>Irene Fossati</h5>
+
+          <div class="img-div"><img src="/img/Testimoni/Paola.jpg" /></div>
+          <p><b>Migliore amica della sposa</b></p>
+          <h5>Paola vanessa pede</h5>
+        </div>
+
+        <h2>I nostri Testimoni</h2>
+        <div class="foto">
+          <div class="img-div"><img src="/img/Testimoni/Luca.jpg" /></div>
+          <p><b>Migliore amico dello sposo</b></p>
+          <h5>Luca Pasquali</h5>
+
+          <div class="img-div"><img src="/img/Testimoni/Alis.jpg" /></div>
+          <p><b>Migliore amico dello sposo</b></p>
+          <h5>Alis Murati</h5>
+        </div>
+
+        <h2>I nostri Pagetti</h2>
+        <div class="foto">
+          <div class="img-div"><img src="/img/Testimoni/Thomas.jpg" /></div>
+          <p><b>Primogenito</b></p>
+          <h5>Thomas D'arma</h5>
+
+          <div class="img-div"><img src="/img/Testimoni/Nicholas.jpg" /></div>
+          <p><b>Secondogenito</b></p>
+          <h5>Nicholas D'arma</h5>
+        </div>
+      </div>
+    </article>
+    <!-- FOOTER -->
+    <%- include('includes/footer.ejs') %>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <%- include('includes/script.ejs') %>
+    <script type="module" src="js/Carousel.js"></script>
+    
+  </body>
+</html>

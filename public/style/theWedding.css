@@ -1,0 +1,362 @@
+.content {
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.content-title {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.content-title h3 {
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 0;
+  text-decoration-line: underline;
+  font-size: 30px;
+  font-family: "Bentham", sans-serif;
+  text-transform: uppercase;
+}
+
+/*? div video*/
+.video {
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-family: "Parisienne", sans-serif;
+  color: #ffffff;
+  font-weight: 100;
+  line-height: 1.3rem;
+}
+
+/*? template delle div delle indicazioni*/
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.card-tp {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff80;
+  backdrop-filter: blur(1px);
+  opacity: 0;
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes moveRight {
+  0% {
+    opacity: 1;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.card-tp:nth-child(1) {
+  animation: moveLeft 1.5s linear forwards;
+
+  animation-delay: 0s;
+}
+.card-tp:nth-child(2) {
+  animation: moveRight 1.5s linear forwards;
+  animation-delay: 3s;
+}
+.card-tp:nth-child(3) {
+  animation: moveLeft 1.5s linear forwards;
+
+  animation-delay: 6s;
+}
+.card-tp:nth-child(4) {
+  animation: moveRight 1.5s linear forwards;
+  animation-delay: 9s;
+}
+
+.card-data-tp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-data-tp img {
+  width: 50%;
+  height: 20%;
+}
+
+.card-data-tp h2 {
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.card-data-tp p {
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+/*? carousel */
+
+.owl-carousel {
+  margin-top: 30px;
+}
+
+.card {
+  width: 100%;
+  height: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*? citazione*/
+
+/*? div della citazione */
+.cit-contenitore {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #cc9b8e;
+  border-radius: 50px;
+}
+
+.cit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cit p {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 25px;
+  font-family: "Garamond", sans-serif;
+  text-align: center;
+}
+
+.cit h5 {
+  width: 100%;
+  font-size: 25px;
+  font-family: "Parisienne", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*? quote icon*/
+.quote-left {
+  position: absolute;
+  top: -5px;
+  color: #cc9b8e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-right {
+  position: absolute;
+  top: 95%;
+  color: #cc9b8e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*? testimoni*/
+
+.testimoni {
+  padding-top: 10px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.foto {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.foto .img-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 57%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.foto p {
+  text-align: center;
+  font-family: "Garamond", sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.foto h5 {
+  text-align: center;
+  font-family: "Dancing script", sans-serif;
+  font-size: 25px;
+}
+
+.team {
+  padding-top: 10px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 481px) {
+  /*? title*/
+  .content-title h3 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  /*? card items */
+  .card-data-tp img {
+    width: 50%;
+    height: 270px;
+  }
+
+  .card-data-tp h2 {
+    font-size: 50px;
+  }
+
+  .card-data-tp p {
+    font-size: 25px;
+  }
+
+  /*? citazione*/
+
+  .cit p {
+    font-size: 35px;
+  }
+
+  .cit h5 {
+    font-size: 35px;
+  }
+
+  /*? testimoni*/
+
+  .foto img {
+    width: 225px;
+    height: 225px;
+  }
+
+  .foto p {
+    font-size: 27px;
+  }
+
+  .foto h5 {
+    font-size: 29px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /*? title*/
+  .content-title h3 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  /*? card items */
+  .card-data-tp img {
+    width: 400px;
+    height: 300px;
+  }
+
+  .card-data-tp h2 {
+    font-size: 55px;
+  }
+
+  .card-data-tp p {
+    font-size: 30px;
+  }
+
+  /*? citazione*/
+
+  .cit p {
+    font-size: 45px;
+  }
+
+  .cit h5 {
+    font-size: 40px;
+  }
+
+  /*? testimoni*/
+
+  .foto img {
+    width: 225px;
+    height: 225px;
+  }
+
+  .foto p {
+    font-size: 27px;
+  }
+
+  .foto h5 {
+    font-size: 29px;
+  }
+}

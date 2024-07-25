@@ -1,0 +1,34 @@
+<% let pagina= 'login'%>
+<%- include('includes/head.ejs', {pagina}); %>
+
+  <body>
+    <%- include('includes/header.ejs'); %>
+
+    <article class="main" >
+      <input type="checkbox" id="chk" aria-hidden="true" />
+
+      <div class="singup" >
+        
+        <p >questa è una pagina dedicata al log in per gli amministratori, perchè non ci dai anche tu il tuo contributo? <a href="/InfoForUS">Clicca qui!</a> </p>
+      </div>
+
+      <div class="login"  >
+        <form  action="/Login" id="login" novalidate>
+          <label for="chk" aria-hidden="true">Log in</label>
+          <input
+            type="text"
+            name="Username"
+            placeholder="Username"
+            required
+          />
+          <input type="password" name="Password" placeholder="Password" required />
+          <button type="submit">Log in</button>
+        </form>
+        <label class="invalid-label ">Username/password errati</label>
+      </div>
+    </article>
+
+    <%- include('includes/script.ejs') %>
+    <script type="module" src="js/loginData.js"></script>
+  </body>
+</html>

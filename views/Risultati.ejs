@@ -1,0 +1,28 @@
+<% let pagina= 'Risultati'%>
+  <%- include('includes/head.ejs', {pagina}); %>
+
+  <body>
+    <!--? Go Top -->
+    <div id="progress">
+      <i id="progressValue" class="fas fa-chevron-up"></i>
+    </div>
+
+    <%- include('includes/header.ejs'); %>
+
+    <article class="content">
+      
+      <h1><b>Benvenuti sposinii</b>, eccovi tutte le persone che hanno compilato e inviato i dati!</h1>
+      
+      <ul></ul>
+
+    
+    </article>
+  
+    <!-- FOOTER -->
+    <%- include('includes/footer.ejs') %>
+    
+    <%- include('includes/script.ejs') %>
+    <script type="module" src="js/risultati.js"></script>
+    
+  </body>
+</html>

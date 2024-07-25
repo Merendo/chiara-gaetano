@@ -1,0 +1,95 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  font-family: "Garamond", sans-serif;
+  background-color: #f8cfcb;
+}
+
+/*? citazione*/
+
+/*? div della citazione */
+.cit-contenitore {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #cc9b8e;
+  border-radius: 50px;
+}
+
+.cit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cit p {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 25px;
+  font-family: "Garamond", sans-serif;
+  text-align: center;
+}
+
+.cit h5 {
+  width: 100%;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Parisienne", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*? quote icon*/
+.quote-left {
+  position: absolute;
+  top: -5px;
+  color: #cc9b8e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-right {
+  position: absolute;
+  top: 99%;
+  color: #cc9b8e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+p a {
+  color: #cc9b8e;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 481px) {
+  .cit p {
+    font-size: 30px;
+  }
+
+  .cit h5 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .cit p {
+    font-size: 35px;
+  }
+
+  .cit h5 {
+    font-size: 45px;
+  }
+}
