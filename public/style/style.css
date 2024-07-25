@@ -126,10 +126,6 @@ header img {
   text-transform: uppercase;
 }
 
-.dropdown_menu a:hover {
-  color: #f5bcb7;
-}
-
 .first {
   border-top-style: solid;
   border-top-width: 1px;
@@ -143,10 +139,6 @@ header img {
 
 .last a {
   color: #ffffff;
-}
-
-.last:hover {
-  background-color: #f5bcb7;
 }
 
 /*? div icona hamburger*/
@@ -634,6 +626,17 @@ footer i {
 }
 
 @media screen and (min-width: 1025px) {
+  .dropdown_menu a:hover {
+    color: #f5bcb7;
+  }
+  .last a:hover {
+    color: #ffffff;
+  }
+
+  .last:hover {
+    background-color: #f5bcb7;
+  }
+
   /*? div contenente h6 getting married*/
 
   .h6-married {
