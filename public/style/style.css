@@ -145,7 +145,7 @@ header img {
   color: #ffffff;
 }
 
-.last a:hover {
+.last:hover {
   color: #f5bcb7;
 }
 
