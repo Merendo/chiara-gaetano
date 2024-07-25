@@ -9,6 +9,7 @@ const label = document.querySelector(".invalid-label");
 const label2 = document.querySelector(".invalid-label2");
 const label3 = document.querySelector(".invalid-label3");
 const label4 = document.querySelector(".invalid-label4");
+const label5 = document.querySelector(".invalid-label5");
 
 const button = document.getElementById("submit");
 

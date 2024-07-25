@@ -169,6 +169,18 @@ form {
   display: block;
 }
 
+.invalid-label5 {
+  text-align: center;
+  width: 100%;
+  font-family: "Garamond", sans-serif;
+  font-size: 18px;
+  display: none;
+}
+
+.invalid-label5.active {
+  display: block;
+}
+
 input:invalid {
   border-color: red;
 }
