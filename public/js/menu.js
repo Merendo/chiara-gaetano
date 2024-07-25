@@ -43,11 +43,3 @@ if (!pagina) {
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
 }
-
-const menu = document.getElementById("menu");
-
-document.addEventListener("click", function (e) {
-  if (!menu.contains(e.target)) {
-    menu.style.opacity = 0;
-  }
-});
