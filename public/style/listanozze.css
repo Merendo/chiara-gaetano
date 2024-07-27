@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100svh;
+  min-height: 100vh;
   font-family: "Garamond", sans-serif;
   background-color: #f8cfcb;
 }
