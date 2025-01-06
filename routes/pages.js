@@ -23,6 +23,10 @@ router.get("/InfoForUs", (req, res) => {
   res.render("InfoForUS", req.query);
 });
 
+router.get("/Playlist", (req, res) => {
+  res.render("Playlist", req.query);
+});
+
 router.get("/Risultati", authenticateToken, (req, res) => {
   res.render("Risultati", req.query);
 });

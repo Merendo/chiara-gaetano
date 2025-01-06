@@ -1,4 +1,4 @@
-import { Credential } from "../models/login.js";
+// import { Credential } from "../models/login.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 

@@ -1,6 +1,6 @@
 //? user sta per la presenza di un utente con tutti i suoi relativi dati
 
-import { User } from "../models/user.js";
+// import { User } from "../models/user.js";
 
 export const inserisciPresenza = async (req, res) => {
   const user = req.body;

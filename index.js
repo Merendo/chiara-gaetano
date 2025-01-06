@@ -1,10 +1,10 @@
 import express from "express";
 import { fileURLToPath } from "url";
 import path from "path";
-import mongoose from "mongoose";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
+import db from "./models/db.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,23 +26,30 @@ app.set("views", path.join(__dirname, "views"));
 //middleware configuration
 app.use(express.json());
 app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
 
 //IMPORT ROUTER
 import pagesRoutes from "./routes/pages.js";
 import presenze from "./routes/presenze.js";
 import auth from "./routes/auth.js";
 import Risultati from "./routes/risultati.js";
+import playlist from "./routes/playlist.js";
+import Database from "./models/db.js";
 
 app.use("/", pagesRoutes);
 app.use("/InfoForUs", presenze);
 app.use("/Login", auth);
 app.use("/Risultati", Risultati);
+app.use("/Playlist", playlist);
 
-mongoose
-  .connect(process.env.CONNECTION_URL)
-  .then(() => {
-    app.listen(PORT, () => {
-      console.log(`Server running on port: ${PORT}`);
-    });
-  })
-  .catch((error) => console.error(error));
+// Test connessione al database
+db.getPlaylist()
+  .then(() => console.log("Connessione al database riuscita!"))
+  .catch((err) =>
+    console.error("Errore nel connettersi al database:", err.message)
+  );
+
+// Avvia il server
+app.listen(PORT, () => {
+  console.log(`Server in esecuzione su http://localhost:${PORT}`);
+});

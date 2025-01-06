@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+}
+
+.content-title {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 30px;
+}
+
+.content-title h3 {
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 0;
+  text-decoration-line: underline;
+  font-size: 30px;
+  font-family: "Bentham", sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #cc9b8e !important;
+}
+
+.custom-btn {
+  color: #cc9b8e;
+  border: 2px solid #cc9b8e;
+  background-color: transparent;
+}
+.custom-btn:hover {
+  background-color: #cc9b8e;
+  color: white;
+}
+
+/*? tabella */
+
+.custom-thead th {
+  background-color: #cc9b8e !important;
+  color: white !important;
+}
